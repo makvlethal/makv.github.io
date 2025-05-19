@@ -1,44 +1,56 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #000;
     color: white;
 }
 
 .hero {
-    height: 100vh;
-    background: url('bg.jpeg') center/cover no-repeat;
+    min-height: 100vh;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px;
     box-sizing: border-box;
 }
 
-.logo {
-    width: 280px;
-    max-width: 80%;
-    margin-bottom: 40px;
+.cover {
+    width: 320px;
+    max-width: 90%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #9b30ff;
 }
 
-.buttons {
+.icons {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    font-size: 2.2em;
+    margin-bottom: 20px;
 }
 
-.btn {
-    padding: 15px 30px;
-    background-color: #8A2BE2;
-    color: white;
+.icons a {
+    color: #9b30ff;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #ffffff;
+}
+
+.email {
+    font-size: 1em;
+    color: #bbb;
+}
+
+.email a {
+    color: #bbb;
     text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #9b30ff;
+.email a:hover {
+    text-decoration: underline;
 }
